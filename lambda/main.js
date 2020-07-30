@@ -67,9 +67,9 @@ async function GetEthSyncing() {
         output = "Successfully synced with the ethereum network";
     } else {
         output = {
-            "startingBlock": response.data.result.startingBlock,
-            "currentBlock": response.data.result.currentBlock,
-            "highestBlock": response.data.result.highestBlock
+            "startingBlock": parseInt(response.data.result.startingBlock),
+            "currentBlock": parseInt(response.data.result.currentBlock),
+            "highestBlock": parseInt(response.data.result.highestBlock)
         };
     }
     return output;

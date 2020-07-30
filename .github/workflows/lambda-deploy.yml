@@ -1,0 +1,41 @@
+name: "Deploy to openethereum-monitoring"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy_source:
+    name: Build and Deploy lambda
+    strategy:
+      matrix:
+        node-version: [12.x]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1.4.2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies and zip lambda folder contents
+        run: cd lambda && npm install && zip -r openethereum.zip .
+
+      - name: Upload Zip to S3 bucket
+        uses: tpaschalis/s3-sync-action@master
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          AWS_S3_BUCKET: ethereum-lambda-monitoring
+          AWS_REGION: "us-east-1"
+          FILE: "./lambda/openethereum.zip"
+
+      - name: Deploy zip to lambda
+        uses: appleboy/lambda-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: ${{ secrets.AWS_REGION }}
+          s3_bucket: ethereum-lambda-monitoring
+          s3_key: openethereum.zip
+          function_name: openethereum-monitoring

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile modified="2020-07-30T02:08:18.837Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="2JyVZ_6AepfpBXup9mDv" version="13.5.5" type="google">
+  <diagram id="DIhZTNtSXqxMqv1Of9SZ" name="Page-3">
+    <mxGraphModel dx="2276" dy="1983" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="uonpw5TG1l2k305T3eoO-0" />
+        <mxCell id="uonpw5TG1l2k305T3eoO-1" parent="uonpw5TG1l2k305T3eoO-0" />
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="uonpw5TG1l2k305T3eoO-1" source="TOutBTE2aq3KpaDrxYMA-1" target="TOutBTE2aq3KpaDrxYMA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-1" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="-70" y="-505" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;fontSize=9;fontColor=#000000;" edge="1" parent="uonpw5TG1l2k305T3eoO-1" source="TOutBTE2aq3KpaDrxYMA-3" target="TOutBTE2aq3KpaDrxYMA-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="261" y="-475" />
+              <mxPoint x="261" y="-475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/capsocial-square-flat-3/500/github-128.png" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="120" y="-510" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-4" value="openethereum-lambda&lt;br&gt;repository" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="-132.5" y="-455" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fillColor=none;fontSize=9;fontColor=#000000;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="340" y="-590" width="30" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-6" value="GitHub Actions &lt;br&gt;CI/CD Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="62.5" y="-448" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-7" value="- Upload into S3 Bucket&lt;br&gt;- Update AWS Lambda Function" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#000000;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="220" y="-530" width="92.5" height="49.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-8" value="AWS Cloud" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="370" y="-590" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-9" value="AWS Lambda&lt;br style=&quot;font-size: 13px;&quot;&gt;OpenEthereum RPC API" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=13;fontColor=#000000;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="425" y="-516" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TOutBTE2aq3KpaDrxYMA-10" value="AWS S3 Bucket&lt;br&gt;Deployment" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket;" vertex="1" parent="uonpw5TG1l2k305T3eoO-1">
+          <mxGeometry x="620" y="-514" width="75" height="78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

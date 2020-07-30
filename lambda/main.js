@@ -63,7 +63,7 @@ async function GetEthSyncing() {
         "jsonrpc": "2.0"
     });
 
-    if (response.data.result == "false") {
+    if (response.data.result == false) {
         output = "Successfully synced with the ethereum network";
     } else {
         output = {
